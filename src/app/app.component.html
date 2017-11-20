@@ -1,20 +1,233 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- Navigation -->
+<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle" (click)="toggleMenuOn($event)">
+  <i class="fa fa-bars"></i>
+</a>
+<nav id="sidebar-wrapper" [class.active]="active">
+  <ul class="sidebar-nav">
+    <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle" (click)="toggleMenuOff($event)">
+      <i class="fa fa-times"></i>
+    </a>
+    <li class="sidebar-brand">
+      <a class="js-scroll-trigger" href="#">Start Bootstrap</a>
+    </li>
+    <li>
+      <a class="js-scroll-trigger" href="#">Home</a>
+    </li>
+    <li>
+      <a class="js-scroll-trigger" href="#">About</a>
+    </li>
+    <li>
+      <a class="js-scroll-trigger" href="#">Services</a>
+    </li>
+    <li>
+      <a class="js-scroll-trigger" href="#">Portfolio</a>
+    </li>
 
+  </ul>
+</nav>
+
+<!-- Header -->
+<header class="header" id="top">
+  <div class="text-vertical-center text-white">
+    <h1>Start Bootstrap</h1>
+    <h3>Free Bootstrap Themes &amp; Templates</h3>
+
+  </div>
+</header>
+
+<!-- About -->
+<section id="about" class="about">
+  <div class="container text-center">
+    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+    <p class="lead">This theme features some wonderful photography courtesy of
+      <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+  </div>
+  <!-- /.container -->
+</section>
+
+<!-- Services -->
+<section id="services" class="services bg-primary text-white">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-10 mx-auto">
+        <h2>Our Services</h2>
+        <hr class="small">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                  </span>
+              <h4>
+                <strong>Service Name</strong>
+              </h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-light">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                  </span>
+              <h4>
+                <strong>Service Name</strong>
+              </h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-light">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                  </span>
+              <h4>
+                <strong>Service Name</strong>
+              </h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-light">Learn More</a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                  </span>
+              <h4>
+                <strong>Service Name</strong>
+              </h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href="#" class="btn btn-light">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- /.row (nested) -->
+      </div>
+      <!-- /.col-lg-10 -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</section>
+
+<!-- Callout -->
+<aside class="callout">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>First Slide</h3>
+          <p>This is a description for the first slide.</p>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Second Slide</h3>
+          <p>This is a description for the second slide.</p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Third Slide</h3>
+          <p>This is a description for the third slide.</p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Fourth Slide</h3>
+          <p>This is a description for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</aside>
+
+
+
+<!-- Call to Action -->
+<aside class="call-to-action bg-primary text-white">
+  <div class="container text-center">
+    <h3>The buttons below are impossible to resist.</h3>
+    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+  </div>
+</aside>
+
+<!-- Map -->
+<section id="contact" class="map">
+  <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+  <br/>
+  <small>
+    <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+  </small>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h4>
+          <strong>Start Bootstrap</strong>
+        </h4>
+        <p>3481 Melrose Place
+          <br>Beverly Hills, CA 90210</p>
+        <ul class="list-unstyled">
+          <li>
+            <i class="fa fa-phone fa-fw"></i>
+            (123) 456-7890</li>
+          <li>
+            <i class="fa fa-envelope-o fa-fw"></i>
+            <a href="mailto:name@example.com">name@example.com</a>
+          </li>
+        </ul>
+        <br>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-facebook fa-fw fa-3x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-twitter fa-fw fa-3x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-dribbble fa-fw fa-3x"></i>
+            </a>
+          </li>
+        </ul>
+        <hr class="small">
+        <p class="text-muted">Copyright &copy; Your Website 2017</p>
+      </div>
+    </div>
+  </div>
+  <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+    <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+  </a>
+</footer>
