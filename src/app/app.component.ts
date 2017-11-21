@@ -6,7 +6,8 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = '普济国际';
+  subtitle = '副标题副标题'
 
   active = false;
 
