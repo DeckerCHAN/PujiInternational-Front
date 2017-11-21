@@ -6,6 +6,7 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  today = Date.now();
   title = '普济国际';
   subtitle = '副标题副标题'
 
