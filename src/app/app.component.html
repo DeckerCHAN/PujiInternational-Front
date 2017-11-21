@@ -28,9 +28,9 @@
 
 <!-- Header -->
 <header class="header" id="top">
-  <div class="text-vertical-center text-white transparent08">
-    <h1>普济国际</h1>
-    <h3>副标题和副标题</h3>
+  <div class="text-vertical-center bright-text-shadow">
+    <h1>{{this.title}}</h1>
+    <h3>{{this.subtitle}}</h3>
 
   </div>
 </header>
@@ -74,7 +74,7 @@
                     <i class="fa fa-compass fa-stack-1x text-primary"></i>
                   </span>
               <h4>
-                <strong>生意买卖 </strong>
+                <strong>生意买卖</strong>
               </h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               <a href="#" class="btn btn-light">了解详情</a>
@@ -120,40 +120,25 @@
 <aside class="callout">
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li *ngFor="let item of this.slideItems;let currentElementIndex=index"
+          [attr.data-slide-to]="currentElementIndex"
+          [class.active]="currentElementIndex == 0"></li>
+      <!--<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>-->
+      <!--<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
+      <!--<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
+      <!--<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>-->
     </ol>
     <div class="carousel-inner" role="listbox">
       <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item active" style="background-image: url('/assets/img/sliding/Picture1.jpg')">
+      <div *ngFor="let item of this.slideItems;let currentElementIndex=index"
+           class="carousel-item dark-text-shadow" [class.active]="currentElementIndex == 0"
+           [style.background-image]="'url(' + item.bg + ')'">
         <div class="carousel-caption d-none d-md-block">
-          <h3>11 月4日melrose park 开盘</h3>
-          <p>占位符占位符占位符占位符占位符占位符占位符</p>
+          <h3>{{item.title}}</h3>
+          <p>{{item.subTitle}}</p>
         </div>
       </div>
-      <!-- Slide Two - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('/assets/img/sliding/Picture2.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-          <h3>Second Slide</h3>
-          <p>This is a description for the second slide.</p>
-        </div>
-      </div>
-      <!-- Slide Three - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('/assets/img/sliding/Picture3.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-          <h3>Third Slide</h3>
-          <p>This is a description for the third slide.</p>
-        </div>
-      </div>
-      <!-- Slide Three - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('/assets/img/sliding/Picture4.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-          <h3>Fourth Slide</h3>
-          <p>This is a description for the third slide.</p>
-        </div>
-      </div>
+
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -215,15 +200,6 @@
 
 </div>
 <!-- /.container -->
-
-<!-- Call to Action -->
-<aside class="call-to-action bg-primary text-white">
-  <div class="container text-center">
-    <h3>The buttons below are impossible to resist.</h3>
-    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-  </div>
-</aside>
 
 
 <!-- Map -->
