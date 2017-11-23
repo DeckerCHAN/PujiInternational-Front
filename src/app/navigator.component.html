@@ -1,0 +1,27 @@
+<!-- Navigation -->
+<a id="menu-toggle" href="" class="btn btn-dark btn-lg toggle" (click)="toggleMenuOn($event)">
+  <i class="fa fa-bars"></i>
+</a>
+<nav id="sidebar-wrapper" [class.active]="this.active">
+  <ul class="sidebar-nav">
+    <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle" (click)="toggleMenuOff($event)">
+      <i class="fa fa-times"></i>
+    </a>
+    <li class="sidebar-brand">
+      <a href="#">Puji Internation</a>
+    </li>
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">About</a>
+    </li>
+    <li>
+      <a href="#">Services</a>
+    </li>
+    <li>
+      <a href="/article">Article</a>
+    </li>
+
+  </ul>
+</nav>

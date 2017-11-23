@@ -14,7 +14,7 @@ export class PrimaryComponent implements OnInit {
   subTitle = '副标题副标题';
   bg = 'assets/img/bg.jpg';
 
-  active = false;
+
 
   slideItems: SlideItem[];
 
@@ -26,14 +26,5 @@ export class PrimaryComponent implements OnInit {
     this.slideService.getItems().then(items => this.slideItems = items);
   }
 
-  toggleMenuOn(event) {
-    event.preventDefault();
-    this.active = !this.active;
-  }
 
-  toggleMenuOff(event) {
-    event.preventDefault();
-    this.active = !this.active;
-
-  }
 }

@@ -9,12 +9,14 @@ import { PrimaryComponent } from './primary.component';
 import { ArticleComponent } from './article.component';
 import { ArticleService } from './services/articles.service';
 import { HeaderComponent } from './header.component';
+import { NavigatorComponent } from './navigator.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PrimaryComponent,
+    NavigatorComponent,
     HeaderComponent,
     ArticleComponent
   ],
