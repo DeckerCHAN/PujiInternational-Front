@@ -26,14 +26,15 @@
   </ul>
 </nav>
 
-<!-- Header -->
-<header class="header" id="top">
-  <div class="text-vertical-center bright-text-shadow">
-    <h1>{{this.title}}</h1>
-    <h3>{{this.subtitle}}</h3>
+<!--&lt;!&ndash; Header &ndash;&gt;-->
+<!--<header class="header" id="top">-->
+<!--<div class="text-vertical-center bright-text-shadow">-->
+<!--<h1>{{this.title}}</h1>-->
+<!--<h3>{{this.subtitle}}</h3>-->
 
-  </div>
-</header>
+<!--</div>-->
+<app-header [title]="this.title" [subTitle]="this.subTitle" [bg]="this.bg" [full]="true"></app-header>
+<!--</header>-->
 
 <!-- About -->
 <section id="about" class="about">
@@ -123,10 +124,6 @@
       <li *ngFor="let item of this.slideItems;let currentElementIndex=index"
           [attr.data-slide-to]="currentElementIndex"
           [class.active]="currentElementIndex == 0"></li>
-      <!--<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>-->
-      <!--<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
-      <!--<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
-      <!--<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>-->
     </ol>
     <div class="carousel-inner" role="listbox">
       <!-- Slide One - Set the background image for this slide in the line below -->
@@ -213,50 +210,3 @@
   </small>
 </section>
 
-<!-- Footer -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <h4>
-          <strong>Puji Internation</strong>
-        </h4>
-        <p>level&nbsp;1
-          <br>O‘Connell&nbsp;Street,&nbsp;Sydney,&nbsp;NSW2050</p>
-        <ul class="list-unstyled">
-          <li>
-            <i class="fa fa-phone fa-fw"></i>
-            (123) 456-7890
-          </li>
-          <li>
-            <i class="fa fa-envelope-o fa-fw"></i>
-            <a href="mailto:name@example.com">info@puji.com.au</a>
-          </li>
-        </ul>
-        <br>
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="#">
-              <i class="fa fa-facebook fa-fw fa-3x"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">
-              <i class="fa fa-twitter fa-fw fa-3x"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">
-              <i class="fa fa-dribbble fa-fw fa-3x"></i>
-            </a>
-          </li>
-        </ul>
-        <hr class="small">
-        <p class="text-muted">Copyright &copy; Puji International {{today | date:'yyyy'}}</p>
-      </div>
-    </div>
-  </div>
-  <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
-    <i class="fa fa-chevron-up fa-fw fa-1x"></i>
-  </a>
-</footer>

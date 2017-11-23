@@ -161,18 +161,6 @@ hr.small {
 }
 
 
-.header-small {
-  position: relative;
-  display: table;
-  width: 100%;
-  height: 40%;
-  background: url(../img/bg.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 .article{
   margin-top: 50px;
 }

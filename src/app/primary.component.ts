@@ -1,6 +1,6 @@
-import {SlideItemsService} from './services/slide-items.service';
-import {SlideItem} from './models/slideitem';
-import {Component, OnInit} from '@angular/core';
+import { SlideItemsService } from './services/slide-items.service';
+import { SlideItem } from './models/slideitem';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -9,10 +9,11 @@ import {Component, OnInit} from '@angular/core';
 })
 
 export class PrimaryComponent implements OnInit {
-  today = Date.now();
 
   title = '普济国际';
-  subtitle = '副标题副标题';
+  subTitle = '副标题副标题';
+  bg = 'assets/img/bg.jpg';
+
   active = false;
 
   slideItems: SlideItem[];
