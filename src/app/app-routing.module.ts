@@ -6,7 +6,7 @@ import {ArticleComponent} from './article.component';
 const routes: Routes = [
   {path: '', redirectTo: '/primary', pathMatch: 'full'},
   {path: 'primary', component: PrimaryComponent},
-  {path: 'article', component: ArticleComponent}
+  {path: 'article/:id', component: ArticleComponent}
 ];
 
 
