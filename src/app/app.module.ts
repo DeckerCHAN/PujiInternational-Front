@@ -10,6 +10,7 @@ import { ArticleComponent } from './article.component';
 import { ArticleService } from './services/articles.service';
 import { HeaderComponent } from './header.component';
 import { NavigatorComponent } from './navigator.component';
+import { ArticleListComponent } from './article-list.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { NavigatorComponent } from './navigator.component';
     PrimaryComponent,
     NavigatorComponent,
     HeaderComponent,
-    ArticleComponent
+    ArticleComponent,
+    ArticleListComponent
   ],
   imports: [
     BrowserModule,

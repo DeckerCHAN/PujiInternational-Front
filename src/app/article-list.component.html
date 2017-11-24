@@ -1,0 +1,45 @@
+<app-header [title]="'Articles'"
+            [subTitle]="'Article about Derek'"
+            [bg]="'assets/img/bg.jpg'"
+            [full]="false"></app-header>
+
+
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <div *ngFor="let summary of this.summaries; let currentIndex = index">
+
+
+
+
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              {{summary.title}}
+            </h2>
+            <h3 class="post-subtitle">
+              {{summary.summary}}
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Start Bootstrap</a>
+            on {{summary.postDate}}</p>
+        </div>
+
+        <hr>
+
+      </div>
+
+
+
+
+
+      <!--&lt;!&ndash; Pager &ndash;&gt;-->
+      <!--<div class="clearfix">-->
+        <!--<a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>-->
+      <!--</div>-->
+    </div>
+  </div>
+</div>
