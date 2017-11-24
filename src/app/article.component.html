@@ -4,13 +4,21 @@
             [full]="false"></app-header>
 
 
+
 <!-- Post Content -->
 <article class="article">
   <div class="container">
+
+
+
     <div class="row">
       <div [innerHTML]="this.convertToHTML(this.article?.content)" class="col-lg-8 col-md-10 mx-auto">
 
       </div>
+
+      <span class="meta col-lg-8 col-md-10 mx-auto text-muted">Posted by
+    <a href="#">{{this.article?.author}}</a>
+    on {{this.article?.postDate}}</span>
     </div>
   </div>
 </article>
