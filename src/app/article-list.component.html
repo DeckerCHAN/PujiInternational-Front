@@ -4,7 +4,6 @@
             [full]="false"></app-header>
 
 
-
 <!-- Main Content -->
 <div class="container">
   <div class="row">
@@ -12,10 +11,8 @@
       <div *ngFor="let summary of this.summaries; let currentIndex = index">
 
 
-
-
         <div class="post-preview">
-          <a href="post.html">
+          <a href="/article/{{summary.id}}">
             <h2 class="post-title">
               {{summary.title}}
             </h2>
@@ -33,12 +30,9 @@
       </div>
 
 
-
-
-
       <!--&lt;!&ndash; Pager &ndash;&gt;-->
       <!--<div class="clearfix">-->
-        <!--<a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>-->
+      <!--<a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>-->
       <!--</div>-->
     </div>
   </div>
