@@ -14,9 +14,6 @@ branches:
     - master
 
 script:
-  - npm run lint
-  - npm run test
-  - npm run e2e
   - ng build --prod --base-href /
 
 notifications:
