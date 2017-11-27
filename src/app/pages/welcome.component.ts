@@ -16,7 +16,7 @@ export class WelcomeComponent implements OnInit {
 
 
   private videoEnded = false;
-  private showVideoControl: any = false;
+  private showVideoControl: any = null;
 
   ngOnInit(): void {
     this.showVideoControl = this.deviceService.isMobile();
@@ -33,6 +33,5 @@ export class WelcomeComponent implements OnInit {
 
   playVideo() {
     this.showVideoControl = null;
-    alert(`show? ${this.showVideoControl}`);
   }
 }
