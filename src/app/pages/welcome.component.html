@@ -2,8 +2,8 @@
        (play)="this.playVideo()" (ended)="videoEnd()"
        src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"
        [attr.autoplay]="this.deviceService.isMobile()?null:''"
-       [attr.playsinline]="this.deviceService.isMobile()?null:''"
-       [attr.webkit-playsinline]="this.deviceService.isMobile()?null:''"
+       [attr.playsinline]="this.deviceService.isMobile()?'':null"
+       [attr.webkit-playsinline]="this.deviceService.isMobile()?'':null"
        preload="auto"
 ></video>
 
