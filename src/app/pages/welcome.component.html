@@ -1,3 +1,5 @@
+<video class="vi"  [attr.controls]="this.deviceService.isMobile()" (ended)="videoEnd()"  src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"  playsinline webkit-playsinline preload="auto" autoplay></video>
+
 <!-- Header -->
 <header *ngIf="this.videoEnded" class="header"  id="top">
   <div class="text-vertical-center text-white dark-text-shadow">
@@ -7,4 +9,3 @@
   </div>
 </header>
 
-<video class="vi"  [attr.controls]="this.deviceService.isMobile()" (ended)="videoEnd()" muted src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"  playsinline webkit-playsinline preload="auto" autoplay></video>
