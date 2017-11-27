@@ -7,4 +7,4 @@
   </div>
 </header>
 
-<video [class.vi]="!this.deviceService.isMobile()"  [attr.controls]="this.deviceService.isMobile()" (ended)="videoEnd()" muted src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"  playsinline webkit-playsinline preload="auto" autoplay></video>
+<video class="vi"  [attr.controls]="this.deviceService.isMobile()" (ended)="videoEnd()" muted src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"  playsinline webkit-playsinline preload="auto" autoplay></video>
