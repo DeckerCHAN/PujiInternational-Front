@@ -7,6 +7,5 @@ import {SlideItem} from './models/slideitem';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  today = Date.now();
 
 }

@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PrimaryComponent } from './primary.component';
-import { ArticleComponent } from './article.component';
-import { ArticleListComponent } from './article-list.component';
+import { PrimaryComponent } from './pages/primary.component';
+import { ArticleComponent } from './pages/article.component';
+import { ArticleListComponent } from './pages/article-list.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/primary', pathMatch: 'full'},

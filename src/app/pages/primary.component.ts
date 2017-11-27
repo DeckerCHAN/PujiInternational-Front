@@ -1,5 +1,5 @@
-import { SlideItemsService } from './services/slide-items.service';
-import { SlideItem } from './models/slideitem';
+import { SlideItemsService } from '../services/slide-items.service';
+import { SlideItem } from '../models/slideitem';
 import { Component, OnInit } from '@angular/core';
 
 

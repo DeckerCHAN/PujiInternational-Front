@@ -6,12 +6,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { SlideItemsService } from './services/slide-items.service';
 import { AppRoutingModule } from './app-routing.module';
-import { PrimaryComponent } from './primary.component';
-import { ArticleComponent } from './article.component';
+import { PrimaryComponent } from './pages/primary.component';
+import { ArticleComponent } from './pages/article.component';
 import { ArticleService } from './services/articles.service';
-import { HeaderComponent } from './header.component';
-import { NavigatorComponent } from './navigator.component';
-import { ArticleListComponent } from './article-list.component';
+import { HeaderComponent } from './page-controls/header.component';
+import { NavigatorComponent } from './page-controls/navigator.component';
+import { ArticleListComponent } from './pages/article-list.component';
+import { FooterComponent } from './page-controls/footer.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { ArticleListComponent } from './article-list.component';
     PrimaryComponent,
     NavigatorComponent,
     HeaderComponent,
+    FooterComponent,
     ArticleComponent,
     ArticleListComponent
   ],

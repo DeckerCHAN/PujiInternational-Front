@@ -1,11 +1,11 @@
-import { SlideItemsService } from './services/slide-items.service';
-import { SlideItem } from './models/slideitem';
+import { SlideItemsService } from '../services/slide-items.service';
+import { SlideItem } from '../models/slideitem';
 import { Component, OnInit } from '@angular/core';
-import { Article } from './models/article';
+import { Article } from '../models/article';
 import marked from 'marked';
 
 import { ActivatedRoute } from '@angular/router';
-import { ArticleService } from './services/articles.service';
+import { ArticleService } from '../services/articles.service';
 
 @Component({
   selector: 'app-article',
@@ -15,7 +15,6 @@ import { ArticleService } from './services/articles.service';
 export class ArticleComponent implements OnInit {
 
 
-  today = Date.now();
 
   active = false;
   mdParser: any;
