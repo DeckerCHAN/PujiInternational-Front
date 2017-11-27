@@ -14,6 +14,7 @@ import { NavigatorComponent } from './page-controls/navigator.component';
 import { ArticleListComponent } from './pages/article-list.component';
 import { FooterComponent } from './page-controls/footer.component';
 import { WelcomeComponent } from './pages/welcome.component';
+import { Ng2DeviceDetectorModule } from 'ng2-device-detector';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { WelcomeComponent } from './pages/welcome.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    Ng2DeviceDetectorModule.forRoot()
   ],
   providers: [SlideItemsService, ArticleService],
   bootstrap: [AppComponent]

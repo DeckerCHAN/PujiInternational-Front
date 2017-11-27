@@ -29,7 +29,7 @@
   border: solid 4px #ff3c64;
 }
 
-video {
+.vi {
   position: fixed;
   top: 50%; left: 50%;
   z-index: -1;
