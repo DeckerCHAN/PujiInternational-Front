@@ -13,11 +13,13 @@ import { HeaderComponent } from './page-controls/header.component';
 import { NavigatorComponent } from './page-controls/navigator.component';
 import { ArticleListComponent } from './pages/article-list.component';
 import { FooterComponent } from './page-controls/footer.component';
+import { WelcomeComponent } from './pages/welcome.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    WelcomeComponent,
     PrimaryComponent,
     NavigatorComponent,
     HeaderComponent,

@@ -1,0 +1,14 @@
+<!-- Header -->
+<header *ngIf="this.videoEnded" class="header"  id="top">
+  <div class="text-vertical-center text-white dark-text-shadow">
+    <h1>aaaa</h1>
+    <h3>bbbbbb</h3>
+    <a href="/primary" class="btn btn-dark btn-lg">Find Out More</a>
+  </div>
+</header>
+
+<video class=".video" (ended)="videoEnd()" autoplay="autoplay">
+  <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4"  /><!-- Safari / iOS, IE9 -->
+  <source src="http://clips.vorwaerts-gmbh.de/VfE.webm"      type="video/webm" /><!-- Chrome10+, Ffx4+, Opera10.6+ -->
+  <source src="http://clips.vorwaerts-gmbh.de/VfE.ogv"       type="video/ogg"  /><!-- Firefox3.6+ / Opera 10.5+ -->
+</video>
