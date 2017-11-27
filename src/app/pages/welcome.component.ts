@@ -11,17 +11,27 @@ import { Ng2DeviceService } from 'ng2-device-detector';
 
 })
 
-export class WelcomeComponent {
-
+export class WelcomeComponent implements OnInit {
   private deviceService: any;
+
+
+  private videoEnded = false;
+  private showVideoControl: any = false;
+
+  ngOnInit(): void {
+    this.showVideoControl = this.deviceService.isMobile();
+  }
 
   constructor(private service: Ng2DeviceService) {
     this.deviceService = service;
   }
 
-  private videoEnded = false;
 
   videoEnd() {
     this.videoEnded = true;
+  }
+
+  pauseOrPlayVideo() {
+    this.showVideoControl = null;
   }
 }
