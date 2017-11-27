@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { SlideItemsService } from './services/slide-items.service';
 import { AppRoutingModule } from './app-routing.module';
@@ -24,7 +25,8 @@ import { ArticleListComponent } from './article-list.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [SlideItemsService, ArticleService],
   bootstrap: [AppComponent]
