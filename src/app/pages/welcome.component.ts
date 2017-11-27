@@ -33,5 +33,6 @@ export class WelcomeComponent implements OnInit {
 
   playVideo() {
     this.showVideoControl = null;
+    alert(`show? ${this.showVideoControl}`);
   }
 }
