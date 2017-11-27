@@ -31,7 +31,7 @@ export class WelcomeComponent implements OnInit {
     this.videoEnded = true;
   }
 
-  pauseOrPlayVideo() {
+  playVideo() {
     this.showVideoControl = null;
   }
 }
