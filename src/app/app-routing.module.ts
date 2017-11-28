@@ -6,7 +6,7 @@ import { ArticleListComponent } from './pages/article-list.component';
 import { WelcomeComponent } from './pages/welcome.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/welcome', pathMatch: 'full'},
+  {path: '', redirectTo: '/primary', pathMatch: 'full'},
   {path: 'welcome', component: WelcomeComponent},
   {path: 'primary', component: PrimaryComponent},
   {path: 'articles', component: ArticleListComponent},
