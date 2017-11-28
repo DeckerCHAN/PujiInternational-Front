@@ -1,5 +1,5 @@
 import {SlideItem} from '../models/slideitem';
-import {ITEMS} from '../mock/mock-slideitems';
+import {ITEMS} from '../mock/slideitems.data';
 import { Injectable } from '@angular/core';
 
 @Injectable()
