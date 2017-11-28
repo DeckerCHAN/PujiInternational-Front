@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class PrimaryComponent implements OnInit {
 
   title = '普济国际';
-  subTitle = '副标题副标题';
+  subTitle = '普度众生，兼济天下';
   bg = 'assets/img/bg.jpg';
 
 

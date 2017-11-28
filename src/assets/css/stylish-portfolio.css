@@ -26,6 +26,7 @@ body {
   font-weight: 700;
   margin: 0;
   padding: 0;
+  letter-spacing: 25px;
 }
 
 /* Custom Button Styles */
@@ -281,7 +282,7 @@ footer {
 }
 
 .dark-text-shadow{
-  text-shadow: 0 0 8px #000000;
+  text-shadow: 0 0 25px #000000;
 
 }
 
