@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Summary } from '../models/summary';
 import { ArticleService } from '../services/articles.service';
-import { summaries } from '../mock/articles.data';
 
 
 @Component({

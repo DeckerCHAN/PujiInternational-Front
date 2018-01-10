@@ -1,5 +1,4 @@
 import { HttpClient } from '@angular/common/http';
-import { articles, summaries } from '../mock/articles.data';
 import { Article } from '../models/article';
 import { Summary } from '../models/summary';
 import { summariesUrl, summariesPageSize, headers, postByIdUrl } from '../config';

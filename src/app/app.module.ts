@@ -15,7 +15,7 @@ import { ArticleListComponent } from './pages/article-list.component';
 import { FooterComponent } from './page-controls/footer.component';
 import { WelcomeComponent } from './pages/welcome.component';
 import { Ng2DeviceDetectorModule } from 'ng2-device-detector';
-import {RegionComponent} from "./pages/region.component";
+import {RegionComponent} from './pages/region.component';
 
 
 @NgModule({
