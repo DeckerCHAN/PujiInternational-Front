@@ -28,7 +28,10 @@ export class ArticleComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.articleService.getArticle(this.articleId).subscribe(article => this.article = article);
+    this.articleService.getArticle(this.articleId).subscribe(article => {
+      this.article = article;
+    });
+
   }
 
   convertToHTML(md): string {
