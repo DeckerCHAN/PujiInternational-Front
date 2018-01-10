@@ -5,5 +5,5 @@ export class Article {
   author: string;
   content: string;
   postDate: string;
-  bg: string;
+  backgroundImage: string;
 }
