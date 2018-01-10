@@ -126,40 +126,14 @@
   <!-- Round about -->
   <div class="row">
 
-    <div class="col-lg-4 col-sm-6 text-center mb-4">
-      <img class="rounded-circle img-fluid d-block mx-auto" src="assets/img/Picture2.jpg" alt="">
-      <h3>city
-        <small>副标题</small>
-      </h3>
-      <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
-    </div>
-    <div class="col-lg-4 col-sm-6 text-center mb-4">
-      <img class="rounded-circle img-fluid d-block mx-auto" src="assets/img/Picture3.jpg" alt="">
-      <h3>北区
-        <small>chatswood</small>
-      </h3>
-      <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
-    </div>
-    <div class="col-lg-4 col-sm-6 text-center mb-4">
-      <img class="rounded-circle img-fluid d-block mx-auto" src="assets/img/Picture4.jpg" alt="">
-      <h3>东区
-        <small>mascot</small>
-      </h3>
-      <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
-    </div>
-    <div class="col-lg-4 col-sm-6 text-center mb-4">
-      <img class="rounded-circle img-fluid d-block mx-auto" src="assets/img/Picture5.jpg" alt="">
-      <h3>西北
-        <small>副标题</small>
-      </h3>
-      <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
-    </div>
-    <div class="col-lg-4 col-sm-6 text-center mb-4">
-      <img class="rounded-circle img-fluid d-block mx-auto" src="assets/img/Picture6.jpg" alt="">
-      <h3>西南
-        <small>副标题</small>
-      </h3>
-      <p>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+    <div *ngFor="let item of this.regionInfo" class="col-lg-4 col-sm-6 text-center mb-4">
+      <a href="#">
+        <img class="rounded-circle img-fluid d-block mx-auto" src="{{item.icon}}" alt="">
+        <h3>{{item.title}}
+          <small>{{item.subTitle}}</small>
+        </h3>
+      </a>
+      <p>{{item.description}}</p>
     </div>
   </div>
 

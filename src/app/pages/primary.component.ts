@@ -1,6 +1,7 @@
-import { SlideItemsService } from '../services/slide-items.service';
-import { SlideItem } from '../models/slideitem';
-import { Component, OnInit } from '@angular/core';
+import {SlideItemsService} from '../services/slide-items.service';
+import {SlideItem} from '../models/slideitem';
+import {Component, OnInit} from '@angular/core';
+import {regionInfoSet} from '../mock/region-info.data';
 
 
 @Component({
@@ -14,6 +15,7 @@ export class PrimaryComponent implements OnInit {
   subTitle = '普度众生，兼济天下';
   bg = 'assets/img/bg.jpg';
 
+  regionInfo = regionInfoSet;
 
 
   slideItems: SlideItem[];
